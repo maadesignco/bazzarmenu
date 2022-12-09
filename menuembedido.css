@@ -57,6 +57,10 @@ header{
 	.encabezado.uno a i{
 		font-size: 25pt;
 	}
+	.contenedorimgmenu{
+		display: flex;
+		justify-content: center;
+	}
 	.encabezado.dos img {
 		height: 35px;
 		width: auto;
@@ -75,20 +79,24 @@ header{
 	.descargacelularmenu h1{
 		text-align: center;
 		font-size: 18pt;
-		margin: 20px 20px 0px 20px;
+		margin: 20px 20px 25px 20px;
 	}
 	.descargacelularmenu a img{
-		margin: 20px auto;
+		margin: 0 auto;
 		width: 200px;
-		box-shadow: 0px 8px 16px rgba(0,0,0,0.5)
+		box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
 	}
-	.descargacelularmenu a{
-		text-align: center;
+	.descargacelularmenu .contenedorimgmenu a{
+		display: block;
+		transition: 0.3s;
+	}
+	.descargacelularmenu .contenedorimgmenu a:hover{
+		transform: scale(1.05)
 	}
 	.contenedorboton{
 		display: flex;
 		justify-content: center;
-		margin: 5px 20px 0px 20px;
+		margin: 30px 20px 0px 20px;
 	}
 	.descargacelularmenu .botonir{
 		display: block;
